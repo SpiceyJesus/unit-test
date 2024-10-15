@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            background-color: #774e3c;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav{
+            background-color: #dccdc2;
+            padding: 15px;
+
+        /*Turns the nav flexable*/
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #774e3c;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            text-decoration: underline;
+            color: #873b1b;
+        }
+
+        main{
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .box{
+            border-width: 2px;
+            border-color: #774e3c;
+            border-style: solid;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Website Header-->
+    <header>
+        <h1>
+            Welcome, But First Coffee
+        </h1>
+    </header>
+
+    <!--Nagivation-->
+    <nav>
+        <!--# will stay on the same page-->
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+
+        <!--Welcome-->
+        <div class="box">
+            <h2>Caffine Origin</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eum officiis quos aliquam, minus voluptatibus facilis. Accusantium cum vero odit reiciendis, exercitationem earum rerum, quo architecto pariatur accusamus fuga ipsam!</p>
+        </div>
+
+        <!--Items-->
+        <div class="box">
+            <h2>Le Brew</h2>
+            <ul>
+                <li>Cappuccino - €2.00</li>
+                <li>Black - €2.00</li>
+                <li>Caffé Mocha - €2.50</li>
+                <li>Pumpkin Spice Latte - €3.95</li>
+                <li>Le Brew Coffee - €4.50</li>
+                <li>Caramel Cappuccino - €3.95</li>
+                <li>White Choco Latte - €3.95</li>
+                <li>Espresso - €1.80</li>
+            </ul>
+        </div>
+
+        <!--Location-->
+        <div class="box">
+            <h2>Location</h2>
+            <p>La Creme 20, Piping hot Str, Candy Island</p>
+        </div>
+    </main>
+</body>
+</html>

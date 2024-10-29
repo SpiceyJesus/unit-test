@@ -91,3 +91,50 @@ body{
     transition-duration: 2.5s;
     transition-timing-function: linear;
 }
+
+/****************************************************** CONTAINER ******************************************************/
+.container{
+    max-width: 1280px;
+
+    margin: auto;
+}
+
+/****************************************************** GRID LAYOUT ******************************************************/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.two-columns .card{
+    width: calc((100% - 50px) /2);
+}
+
+.three-columns .card{
+    width: calc((100% - 100px) /3);
+}
+
+/****************************************************** MAIN CONTENT ******************************************************/
+.main-content{
+    margin-top: 100px;
+}
+
+.vertical-title{
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    transform-origin: 0 0; /*rotate from top left*/
+    transform: rotate(90deg) translateY(5px);
+
+    position: absolute;
+}
+
+footer{
+    grid-template-columns: 3fr;
+    background-color: #b5b5b5;
+    text-align: left;
+    font-size: 0.7em;
+}
+

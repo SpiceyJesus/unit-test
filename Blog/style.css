@@ -25,6 +25,9 @@ body{
     width: 100vw; /*vw = viewport width*/
 
     display: flex;
+
+    position: relative;
+    z-index: 1010;
 }
 
 .intro-container{
@@ -131,10 +134,93 @@ body{
     position: absolute;
 }
 
-footer{
-    grid-template-columns: 3fr;
-    background-color: #b5b5b5;
-    text-align: left;
-    font-size: 0.7em;
+/****************************************************** FOOTER ******************************************************/
+.website-footer{
+    background-color: #bebebe;
+    padding: 50px;
+}
+.website-footer .container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.website-footer .summary{
+    width: 33%;
+}
+
+.footer-links{
+    list-style: none;
+
+    margin-left: auto;
+
+    columns: 2;
+    gap: 50px;
+}
+
+.footer-item{
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #000;
+    text-decoration: none;
+}
+
+.website-footer .copyright{
+    width: 100%;
+
+    margin-top: 50px;
+
+    text-align: right;
+}
+
+/****************************************************** NAVIGATION BAR ******************************************************/
+.navbar{
+    background-color: #ffffff;
+
+    border-color: #ffffff;
+    border-style: solid;
+    /* cancels out all borders*/
+    border-width: 0;
+    border-bottom-width: 1px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-brand{
+    font-family: Pacifico, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    /*Scales the font by 150% of the original size*/
+    font-size: 1.5em;
+
+    align-content: center;
+}
+
+.navbar-nav{
+    list-style: none;
+    display: flex;
+}
+
+.navbar-nav .nav-item{
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link{
+    padding: 30px 20px; /*Top and bottom - left and right*/
+}

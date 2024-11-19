@@ -14,6 +14,19 @@ body{
     min-height: 200vh;
 }
 
+hr{
+    border: none;
+    /*vaues of border size/colour*/
+    border-top: 1px solid #878787;
+
+    /*!important makes it different to change specific css commands later*/
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    
+}
+
+
+
 /****************************************************** INTRO SCREEN ******************************************************/
 .intro{
     background-image: url(images/leaves.jpg);
@@ -28,6 +41,11 @@ body{
 
     position: relative;
     z-index: 1010;
+}
+
+.intro-narrow{
+    height: 75vh;
+    z-index: 900;
 }
 
 .intro-container{
@@ -110,6 +128,10 @@ body{
 
 }
 
+.one-column .card{
+    width: 100%;
+}
+
 .two-columns .card{
     width: calc((100% - 50px) /2);
 }
@@ -121,6 +143,12 @@ body{
 /****************************************************** MAIN CONTENT ******************************************************/
 .main-content{
     margin-top: 100px;
+}
+
+.content-narrow{
+    width: 50%;
+    min-width: 640px;
+    margin: auto;
 }
 
 .vertical-title{
@@ -223,4 +251,27 @@ body{
 
 .navbar-nav .nav-link{
     padding: 30px 20px; /*Top and bottom - left and right*/
+}
+
+/****************************************************** STORY ******************************************************/
+.story-header h1{
+    font-size: 2em;
+    margin-bottom: 25px;
+    font-weight: bolder;
+}
+
+.story-header p{
+    font-size: 1.5em;
+    font-family: 'Playwrite DE Grund', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.story-header .byline{
+    margin-top: 10px;
+}
+
+.story-header .byline * {
+    display: inline;
+    font-style: normal;
 }

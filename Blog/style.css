@@ -140,6 +140,10 @@ hr{
     width: calc((100% - 100px) /3);
 }
 
+.four-columns .card{
+    width: calc((100% - 150px) /4);
+}
+
 /****************************************************** MAIN CONTENT ******************************************************/
 .main-content{
     margin-top: 100px;
@@ -274,4 +278,58 @@ hr{
 .story-header .byline * {
     display: inline;
     font-style: normal;
+}
+
+/*a comma helps apply the same CSS to different element*/
+.story-content p, .story-content .row{
+    margin-bottom: 50px;
+}
+
+.story-footer{
+    background-color: #bebebe;
+
+    margin: 50px auto;
+    padding: 100px 50px;
+}
+
+.story-footer p{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+
+    transition-property: background-color;
+    transition-duration: 0.15s;
+}
+
+.social-icon svg{
+    display: block;
+    font-size: 25px;
+    width: 1em;
+    height: 1em;
+
+    transition-property: fill;
+    transition-duration: 0.15s;
+}
+
+.social-icon:hover {
+    background-color: #000;
+}
+
+.social-icon:hover svg{
+    fill: #ffffff;
+}
+
+.keep-reading{
+    background-color: #dedede;
+    padding: 50px;
 }
